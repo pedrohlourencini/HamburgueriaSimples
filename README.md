@@ -35,6 +35,7 @@ Utilizado Delphi RAD Studio 10.3, e SQLite Studio.
 	- Botão Realizar Pedido:
 			- Para o usuário, permite criar o pedido e altera-lo, quando o mesmo não se encontrar com status ENVIADO ou EM TRANSPORTE,
 			- sem a necessidade de possuir um usuário e senha no sistema.
+![img1.png]
 	
 - Tela de Cadastro de Pedidos
 	- Apresenta filtros onde o cliente pode visualizar os pedidos realizados, e o valor deles.
