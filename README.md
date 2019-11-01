@@ -6,6 +6,8 @@ Projeto desenvolvido para teste.
 
 Utilizado Delphi RAD Studio 10.3, e SQLite Studio.
 
+As imagens de demonstração estão na raiz do projeto.
+
 - Arquitetura idealizada:
 	- Plataforma Web ou um app instalado na máquina do cliente, onde o mesmo pode consultar os seus pedidos realizados em determinado periodo, seus gastos, entre outras informações.
 	- Após a gravação do Pedido, o mesmo é enviado para um WebService, que por sua vez transmite para a aplicação na hamburgueria.
@@ -29,13 +31,15 @@ Utilizado Delphi RAD Studio 10.3, e SQLite Studio.
 			-IPED
 			-PRODUTO
 			-USUARIO
-	
+
+- Acesso:
+	- Para acesso, utilizar o login usuario = admin e senha = 123, ou criar um novo admin via banco.
+
 - Tela de Login:
 	- Através do Usuário e Senha é possivel acessar como administrador, assim, tendo mais opções no sistema.
 	- Botão Realizar Pedido:
 			- Para o usuário, permite criar o pedido e altera-lo, quando o mesmo não se encontrar com status ENVIADO ou EM TRANSPORTE,
 			- sem a necessidade de possuir um usuário e senha no sistema.
-![](img1.png)
 	
 - Tela de Cadastro de Pedidos
 	- Apresenta filtros onde o cliente pode visualizar os pedidos realizados, e o valor deles.
