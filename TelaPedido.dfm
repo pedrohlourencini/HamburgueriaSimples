@@ -508,6 +508,10 @@ object TelaPedidos: TTelaPedidos
         object tbInformacoes: TTabSheet
           Caption = 'Outras Informa'#231#245'es'
           ImageIndex = 1
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object dbmemoComplemento: TDBMemo
             Left = 3
             Top = 3
@@ -520,6 +524,10 @@ object TelaPedidos: TTelaPedidos
         end
         object tbPagamento: TTabSheet
           Caption = 'Condi'#231#227'o de Pagamento'
+          ExplicitLeft = 0
+          ExplicitTop = 0
+          ExplicitWidth = 0
+          ExplicitHeight = 0
           object grpPag: TGroupBox
             Left = 0
             Top = 0

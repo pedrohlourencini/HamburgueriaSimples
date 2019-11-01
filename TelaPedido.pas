@@ -240,6 +240,8 @@ begin
         TbIPED.Edit;
 
         lstCondPag.ItemIndex := TbCPEDCONDPAGAMENTO.AsInteger;
+        edtTELEFONE.Text := TbCPEDTELEFONE.AsString;
+        edtCEP.Text := TbCPEDCEP.AsString;
 
         FuncoesPedido_Unit.TransfereIPED_TbIPED(Conection.ConexaoBanco, IntToStr(iNrPedido), TbIPED);
         iNrItem := TbIPEDNRITEM.AsInteger;
@@ -247,7 +249,10 @@ begin
     2:
       begin
         TbCPED.Locate('NRPEDIDO', iNrPedido);
+
         lstCondPag.ItemIndex := TbCPEDCONDPAGAMENTO.AsInteger;
+        edtTELEFONE.Text := TbCPEDTELEFONE.AsString;
+        edtCEP.Text := TbCPEDCEP.AsString;
 
         TbIPED.Open;
         TbIPED.Edit;
