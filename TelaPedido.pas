@@ -97,6 +97,7 @@ type
     procedure dbmemoINFOEXTRAExit(Sender: TObject);
     function FormatarTelefone(Telefone : String):String;
     procedure edtTELEFONEExit(Sender: TObject);
+    procedure edtQTDEItemExit(Sender: TObject);
   private
     { Private declarations }
   public
@@ -195,6 +196,15 @@ begin
   if TbIPED.State = dsInsert then ShowMessage('ITEM ADICIONADO');
 
   lkProduto.SetFocus;
+end;
+
+procedure TTelaPedidos.edtQTDEItemExit(Sender: TObject);
+begin
+  if TbIPEDQTDE.AsInteger = 0 then
+  begin
+    TbIPED.Delete;
+  end;
+
 end;
 
 procedure TTelaPedidos.edtTELEFONEExit(Sender: TObject);

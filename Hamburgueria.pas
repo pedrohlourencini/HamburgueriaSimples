@@ -85,7 +85,7 @@ uses
 
 procedure TCadPedidos.btAlterarClick(Sender: TObject);
 begin
-  if QCPEDSTATUS.AsString = 'AGUARDANDO APROVAÇÃO' then
+  if (QCPEDSTATUS.AsString = 'AGUARDANDO APROVAÇÃO') or (not bPedidoRapido) then
   begin
     Application.CreateForm(TTelaPedidos, TelaPedidos);
 

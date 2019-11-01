@@ -336,16 +336,12 @@ object TelaPedidos: TTelaPedidos
         Top = 445
         Width = 1268
         Height = 169
-        ActivePage = tbPagamento
+        ActivePage = Produto
         TabOrder = 2
         object Produto: TTabSheet
           Caption = 'Produto'
           ImageIndex = 2
           OnEnter = ProdutoEnter
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object grpProduto: TGroupBox
             Left = 0
             Top = 3
@@ -453,6 +449,7 @@ object TelaPedidos: TTelaPedidos
               Font.Style = []
               ParentFont = False
               TabOrder = 1
+              OnExit = edtQTDEItemExit
             end
             object edtVrTotItem: TDBEdit
               Left = 114
@@ -523,10 +520,6 @@ object TelaPedidos: TTelaPedidos
         end
         object tbPagamento: TTabSheet
           Caption = 'Condi'#231#227'o de Pagamento'
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object grpPag: TGroupBox
             Left = 0
             Top = 0
