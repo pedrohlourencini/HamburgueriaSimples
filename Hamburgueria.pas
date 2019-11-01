@@ -295,17 +295,21 @@ begin
     begin
       if sStatus = '' then
       begin
-          if sqlFiltro <> '' then sqlFiltro := ' AND '
-          else                    sqlFiltro := ' WHERE ';
+          if sqlFiltro <> '' then sqlFiltro := sqlFiltro + ' AND ('
+          else                    sqlFiltro := ' WHERE (';
 
           sStatus := 'CPED.STATUS = ' + QuotedStr((lstcbStatus.Items.Strings[i]));
       end
       else
-          sStatus := ' OR CPED.STATUS = ' + QuotedStr((lstcbStatus.Items.Strings[i]));
+          sStatus := sStatus + ' OR CPED.STATUS = ' + QuotedStr((lstcbStatus.Items.Strings[i]));
 
-      sqlFiltro := sqlFiltro + sStatus;
     end;
   end;
+
+  if sStatus <> '' then sStatus := sStatus + ')';
+  
+
+  sqlFiltro := sqlFiltro + sStatus;
 
   QCPED.Close;
   QCPED.SQL.Clear;

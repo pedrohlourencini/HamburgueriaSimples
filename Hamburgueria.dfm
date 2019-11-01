@@ -33,6 +33,10 @@ object CadPedidos: TCadPedidos
       TabOrder = 0
       object tbDadosConsulta: TTabSheet
         Caption = 'Pedidos'
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 0
+        ExplicitHeight = 0
         object lblTotal: TLabel
           Left = 1004
           Top = 490

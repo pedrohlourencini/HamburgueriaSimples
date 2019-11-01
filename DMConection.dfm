@@ -15,7 +15,9 @@ object Conection: TConection
   TextHeight = 13
   object ConexaoBanco: TFDConnection
     Params.Strings = (
-      'Database=C:\Project\Hamburgueria\Hamburgueria.db'
+      
+        'Database=C:\Users\Pedro Lourencini\Documents\Embarcadero\Studio\' +
+        'Projects\Hamburgueria.db'
       'LockingMode=Normal'
       'DriverID=SQLite')
     Left = 28
